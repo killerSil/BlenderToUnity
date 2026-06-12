@@ -1,0 +1,73 @@
+ Instalação
+
+ Lado Unity
+1. Copia `unity/Assets/BlenderToUnity/BlenderToUnityServer.cs` para a pasta `Assets/` do teu projeto.
+2. Menu **GameObject > BlenderToUnity > Criar Servidor** (ou adiciona o componente `BlenderToUnityServer` a um GameObject vazio).
+3. O servidor arranca sozinho na porta **9931** (`autoStart`). Vê o estado no Inspector.
+
+Lado Blender (3.0+)
+1. **Edit > Preferences > Add-ons > Install...** e escolhe `blender_addon/blender_to_unity.py`.
+2. Ativa o addon "BlenderToUnity".
+3. Na Vista 3D, prime **N** para abrir a sidebar → separador **BlenderToUnity**.
+4. Clica **Ligar** (host `127.0.0.1`, porta `9931`). A cena inteira é enviada de imediato.
+
+---
+
+Como funciona
+
+| Ação no Blender | Resultado na Unity |
+|---|---|
+| Mover/rodar/escalar objeto | Transform atualizado em tempo real |
+| Editar malha (Edit Mode, sculpt, modifiers) | Mesh reconstruída |
+| Mudar cor do material (Principled BSDF) | Cor do material atualizada |
+| Textura no Base Color (Image Texture) | Textura enviada e aplicada na Unity |
+| Pintar a textura (Texture Paint) | Textura reenviada automaticamente |
+| Mudar hierarquia (parent) | Hierarquia replicada sob `BlenderSync` |
+| Apagar objeto | GameObject removido |
+| Reproduzir animação (▶ na timeline) | Malhas deformadas frame a frame na Unity |
+| Esconder objeto | GameObject desativado |
+
+
+Installation
+
+Unity Side
+1. Copy `unity/Assets/BlenderToUnity/BlenderToUnityServer.cs` to the `Assets/` folder of your project.
+
+2. Menu **GameObject > BlenderToUnity > Create Server** (or add the `BlenderToUnityServer` component to an empty GameObject).
+
+3. The server starts automatically on port **9931** (`autoStart`). Check the status in the Inspector.
+
+Blender Side (3.0+)
+1. **Edit > Preferences > Add-ons > Install...** and choose `blender_addon/blender_to_unity.py`.
+
+2. Activate the "BlenderToUnity" addon.
+
+3. In 3D View, press **N** to open the sidebar → **BlenderToUnity** tab.
+
+4. Click **Connect** (host `127.0.0.1`, port `9931`). The entire scene is sent immediately.
+
+---
+
+How it works
+
+| Action in Blender | Result in Unity |
+
+|---|---|
+
+| Move/rotate/scale object | Transform updated in real time |
+
+| Edit mesh (Edit Mode, sculpt, modifiers) | Mesh rebuilt |
+
+| Change material color (Principled BSDF) | Material color updated |
+
+| Texture in Base Color (Image Texture) | Texture sent and applied in Unity |
+
+| Paint the texture (Texture Paint) | Texture automatically resent |
+
+| Change hierarchy (parent) | Hierarchy replicated under `BlenderSync` |
+
+| Delete object | GameObject removed |
+
+| Play animation (▶ on timeline) | Meshes deformed frame by frame in Unity |
+
+| Hide object | GameObject disabled |
