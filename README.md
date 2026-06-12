@@ -93,11 +93,3 @@ ________________________________________
 
 This asset is completely free to help speed up your workflow and support the Blender + Unity community.
 If you find it useful, consider leaving a review — it helps a lot!
-________________________________________
-Se quiseres, agora posso:
-
-✅ Criar uma versão mais curta e mais "marketing-driven" (a Asset Store gosta de textos mais diretos)
-✅ Escrever a Short Description (até 200 caracteres) que aparece no topo
-✅ Preparar o texto para a secção Technical Details
-✅ Fazer uma checklist final para garantir que passa na revisão da Unity sem rejeição
-
