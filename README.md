@@ -1,5 +1,7 @@
 BlenderToUnity 
+
 Real-Time Scene Sync (Free)
+
 BlenderToUnity is a lightweight real-time bridge between Blender (3.0+) and Unity.
 It allows you to sync your entire Blender scene directly into Unity with live updates — including transforms, meshes, materials, textures, hierarchy, and animation playback.
 No manual exporting. No FBX re-importing. Just press Connect and start working.
