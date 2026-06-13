@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio | BlenderToUnity</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --light: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 1rem auto 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            margin-bottom: 2rem;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        .contact-info {
+            background: var(--primary);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .email-link {
+            color: var(--accent);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kiala Game Studio</h1>
+        <p>Unity Tool Developer & 3D Pipeline Specialist</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="work">
+            <h2>Work Samples</h2>
+            <div class="grid">
+                <!-- Project 1: BlenderToUnity -->
+                <div class="card">
+                    <h3>BlenderToUnity V1.2.0</h3>
+                    <p>A professional bridge designed to streamline the asset pipeline between Blender and Unity. Solves common issues with scale, rotation, and material mapping for faster iteration.</p>
+                    <strong>Key Feature:</strong> Real-time asset iteration and automatic axis correction.
+                    <br><br>
+                    <a href="https://github.com/killerSil" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Source on GitHub &rarr;</a>
+                </div>
+                
+                <!-- Project 2: Pipeline Optimization -->
+                <div class="card">
+                    <h3>Pipeline Optimization Tools</h3>
+                    <p>Development of custom scripts to automate repetitive tasks within the Unity Editor, reducing manual setup time for 3D environments and character imports.</p>
+                    <strong>Key Feature:</strong> Workflow automation and productivity enhancement.
+                    <br><br>
+                    <a href="https://github.com/killerSil" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Profile on GitHub &rarr;</a>
+                </div>
+
+                <!-- Project 3: Asset Integration -->
+                <div class="card">
+                    <h3>High-Fidelity Asset Integration</h3>
+                    <p>Specialized in ensuring technical consistency between DCC tools and game engines, maintaining UV integrity and vertex data during complex migrations.</p>
+                    <strong>Key Feature:</strong> Technical art and architectural consistency.
+                    <br><br>
+                    <a href="https://github.com/killerSil" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Portfolio on GitHub &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Details</h2>
+            <div class="contact-info">
+                <p>For business inquiries, support, or collaborations, please reach out via email:</p>
+                <a href="/cdn-cgi/l/email-protection#9ef5f7fff2fff9fff3fbedeaebfaf7f1def9f3fff7f2b0fdf1f3" class="email-link"><span class="__cf_email__" data-cfemail="365d5f575a5751575b53454243525f5976515b575f5a1855595b">[email&#160;protected]</span></a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Kiala Game Studio. All rights reserved.
+    </footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0b02685bad1304a',t:'MTc4MTM0MzgwMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
